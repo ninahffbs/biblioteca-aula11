@@ -1,0 +1,14 @@
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.AssemblyInfoInputs.cache
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.AssemblyInfo.cs
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.csproj.CoreCompileInputs.cache
+/Users/ninafernandes/Desktop/projeto11/bin/Debug/net10.0/projeto11
+/Users/ninafernandes/Desktop/projeto11/bin/Debug/net10.0/projeto11.deps.json
+/Users/ninafernandes/Desktop/projeto11/bin/Debug/net10.0/projeto11.runtimeconfig.json
+/Users/ninafernandes/Desktop/projeto11/bin/Debug/net10.0/projeto11.dll
+/Users/ninafernandes/Desktop/projeto11/bin/Debug/net10.0/projeto11.pdb
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.dll
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/refint/projeto11.dll
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.pdb
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.genruntimeconfig.cache
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/ref/projeto11.dll
