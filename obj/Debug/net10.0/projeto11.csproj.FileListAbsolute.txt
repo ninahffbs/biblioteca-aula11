@@ -12,3 +12,4 @@
 /Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.pdb
 /Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.genruntimeconfig.cache
 /Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/ref/projeto11.dll
+/Users/ninafernandes/Desktop/projeto11/obj/Debug/net10.0/projeto11.sourcelink.json
