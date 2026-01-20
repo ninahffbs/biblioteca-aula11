@@ -1,31 +1,62 @@
 ﻿using aula11;
+using System;
 class Program
 {
     static void Main()
     {
-        Livro livro1 = new Livro(1, "Crime e Castigo");
-        Livro livro2 = new Livro(2, "Em agosto nos vemos");
         Pessoa pessoa1 = new Pessoa(1, "Nina");
         Biblioteca biblioteca = new Biblioteca();
-        // Console.WriteLine($"{livro1.Titulo}, {livro1.Status}");
-        // livro1.Emprestar("Nina");
-        // Console.WriteLine($"{livro1.Titulo}, {livro1.Status}");
-        // livro1.Devolver();
-        // Console.WriteLine($"{livro1.Titulo}, {livro1.Status}");
-        // pessoa1.PegarLivro(livro1);
-        // foreach (var livro in pessoa1.Livros)
-        // {
-        //     Console.WriteLine($"- {livro.Titulo} ({livro.Status})");
-        // }
-        // pessoa1.DevolverLivro(livro1);
-        // foreach (var livro in pessoa1.Livros)
-        // {
-        //     Console.WriteLine($"- {livro.Titulo} ({livro.Status})");
-        // }
-        biblioteca.CadastrarLivro(livro1);
-        biblioteca.ListarLivros();
-        biblioteca.CadastrarUsuario(pessoa1);
-        biblioteca.EmprestarLivro(livro2, pessoa1);
-        biblioteca.ListarLivros();
+
+        while (true)
+        {
+            Console.WriteLine("--- Bem vinde a biblioteca da Nina! <3 ---");
+            Console.WriteLine("Escolha uma opção: ");
+            Console.WriteLine("1- Listar todos os livros");
+            Console.WriteLine("2- Emprestar livro");
+            Console.WriteLine("3- Sair");
+            int opcao = int.Parse(Console.ReadLine());
+            if (opcao == 3)
+            {
+                break;
+            }
+            else if (opcao == 1)
+            {
+                biblioteca.ListarLivros();
+                continue;
+            }
+            else if (opcao == 2)
+            {
+                Console.WriteLine("Para emprestar um livro, cadastre o usuário:");
+                Console.WriteLine("Registre o nome do usuário:");
+                string nome = Console.ReadLine();
+                Random rnd = new Random();
+                Pessoa pessoa = new Pessoa(rnd.Next(1, 1000), nome);
+                biblioteca.CadastrarUsuario(pessoa);
+
+                Console.WriteLine("\n--- Lista de livros: ---");
+                biblioteca.ListarLivros();
+                Console.WriteLine("Agora insira o id do livro que deseja emprestar:");
+                int id_escolhido = int.Parse(Console.ReadLine());
+
+                Livro livroEscolhido = null;
+                foreach (var livro in biblioteca.Livros)
+                {
+                    if (livro.Isbn == id_escolhido)
+                    {
+                        livroEscolhido = livro;
+                        break;
+                    }
+                }
+                if (livroEscolhido == null)
+                {
+                    Console.WriteLine("Livro com esse Id não encontrado.");
+                }
+                else
+                {
+                    biblioteca.EmprestarLivro(livroEscolhido, pessoa);
+                }
+                continue;
+            }
+        }
     }
 }

@@ -9,6 +9,18 @@ public class Biblioteca
     {
         Livros = new List<Livro>();
         Pessoas = new List<Pessoa>();
+
+        Livro livro1 = new Livro(1, "Crime e Castigo");
+        Livro livro2 = new Livro(2, "Noites brancas");
+        Livro livro3 = new Livro(3, "Oração para desaparecer");
+        Livro livro4 = new Livro(4, "Tudo é rio");
+        Livro livro5 = new Livro(5, "O conto da aia");
+        Pessoa pessoa1 = new Pessoa(1, "Nina");
+        CadastrarLivro(livro1);
+        CadastrarLivro(livro2);
+        CadastrarLivro(livro3);
+        CadastrarLivro(livro4);
+        CadastrarLivro(livro5);
     }
 
     public void CadastrarLivro(Livro livro)
