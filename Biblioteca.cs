@@ -34,7 +34,7 @@ public class Biblioteca
             }
         }
         Livros.Add(livro);
-        Console.WriteLine("Livro cadastrado com sucesso!");
+        //Console.WriteLine("Livro cadastrado com sucesso!");
     }
     public void CadastrarUsuario(Pessoa pessoa)
     {

@@ -36,12 +36,12 @@ class Program
                 Console.WriteLine("\n--- Lista de livros: ---");
                 biblioteca.ListarLivros();
                 Console.WriteLine("Agora insira o id do livro que deseja emprestar:");
-                int id_escolhido = int.Parse(Console.ReadLine());
+                int idEscolhido = int.Parse(Console.ReadLine());
 
                 Livro livroEscolhido = null;
                 foreach (var livro in biblioteca.Livros)
                 {
-                    if (livro.Isbn == id_escolhido)
+                    if (livro.Isbn == idEscolhido)
                     {
                         livroEscolhido = livro;
                         break;
